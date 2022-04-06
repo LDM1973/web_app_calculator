@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculadora dark">
+            <div class="theme-toggler active">
+                <i class="toggler-icon"></i>
+            </div>
+            <div class="display-screen">
+                <div id="display"></div>
+            </div>
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <td><button class="btn-operador" id="limpar">C</button></td>
+                        <td><button class="btn-operador" id="/">&divide;</button></td>
+                        <td><button class="btn-operador" id="*">&times;</button></td>
+                        <td><button class="btn-operador" id="apagar"><</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-numero" id="7">7</button></td>
+                        <td><button class="btn-numero" id="8">8</button></td>
+                        <td><button class="btn-numero" id="9">9</button></td>
+                        <td><button class="btn-operador" id="-">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-numero" id="4">4</button></td>
+                        <td><button class="btn-numero" id="5">5</button></td>
+                        <td><button class="btn-numero" id="6">6</button></td>
+                        <td><button class="btn-operador" id="+">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-numero" id="3">3</button></td>
+                        <td><button class="btn-numero" id="2">2</button></td>
+                        <td><button class="btn-numero" id="1">1</button></td>
+                        <td rowspan="2"><button class="btn-igual" id="igual">=</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-operador" id="(">(</button></td>
+                        <td><button class="btn-numero" id="0">0</button></td>
+                        <td><button class="btn-operador" id=")">)</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
