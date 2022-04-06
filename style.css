@@ -15,9 +15,6 @@ a {
     color: white;
 }
 
-body {
-    background-image: linear-gradient(to bottom right, rgba(79,51,176,1.0), rgba(210,53,165));
-}
 
 .container {
     height: 100vh;
@@ -103,6 +100,10 @@ button#igual {
 
 /* Tema Claro */
 
+body {
+    background-color: #f8fafb;
+}
+
 .calculadora {
     background-color: white;
 }
@@ -132,6 +133,10 @@ button#igual {
 }
 
 /* Tema Escuro */
+
+body.dark {
+    background-color: #071115;
+}
 
 .calculadora.dark {
     background-color: #071115;
