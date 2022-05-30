@@ -28,8 +28,8 @@ a {
     height: auto;
     width: auto;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 30px black;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgb(12, 12, 12);
 }
 
 .theme-toggler {
@@ -42,11 +42,11 @@ a {
 }
 
 .theme-toggler.active {
-    color: #333
+    color: #000000
 }
 
 .theme-toggler.active::before {
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .theme-toggler::before {
@@ -57,7 +57,7 @@ a {
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-color: #333;
+    background-color: #080808;
     z-index: -1;
 }
 
@@ -69,9 +69,11 @@ a {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    font-size: 30px;
+    font-size: 50px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
     margin-bottom: 20px;
     overflow-x: scroll;
+    scrollbar-width: none; /* Firefox */
 }
 
 #display::-webkit-scrollbar {
@@ -87,11 +89,11 @@ button {
     margin: 5px;
     font-size: 20px;
     cursor: pointer;
-    transition: all 200ms ease;
+    transition: transform 0.2s ease;
 }
 
-button::hover {
-    transform: scale(1.15);
+button:hover {
+    transform: scale(1.2);
 }
 
 button#igual {
@@ -101,45 +103,45 @@ button#igual {
 /* Tema Claro */
 
 body {
-    background-color: #f8fafb;
+    background-color: #e9eaed;
 }
 
 .calculadora {
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .calculadora #display {
-    color: black;
+    color: #000000;
 }
 
 .calculadora button#limpar {
-    background-color: #ffd5d8;
-    color: #fc4552;
+    background-color: #e5202b;
+    color: #000000;
 }
 
 .calculadora button.btn-numero {
-    background-color: #c3eaff;
-    color: black;
+    background-color: #dbdbdb;
+    color: #000000;
 }
 
 .calculadora button.btn-operador {
-    background-color: #ffd0fd;
-    color: #f967f3;
+    background-color: #27292a;
+    color: #ffffff;
 }
 
 .calculadora button.btn-igual {
-    background-color: #adf9e7;
-    color: black;
+    background-color: #e5202b;
+    color: #000000;
 }
 
 /* Tema Escuro */
 
 body.dark {
-    background-color: #071115;
+    background-color: #111111;
 }
 
 .calculadora.dark {
-    background-color: #071115;
+    background-color: #080808;
 }
 
 .calculadora.dark #display {
@@ -147,21 +149,21 @@ body.dark {
 }
 
 .calculadora.dark button#limpar {
-    background-color: #2d191e;
-    color: #bd3740;
+    background-color: #e5202b;
+    color: #000000;
 }
 
 .calculadora.dark button.btn-numero {
-    background-color: #1b2f38;
-    color: #f8fafb;
+    background-color: #000000;
+    color: #dbdbdb;
 }
 
 .calculadora.dark button.btn-operador {
-    background-color: #2e1f39;
-    color: #aa00a4;
+    background-color: #ffffff;
+    color: #27292a;
 }
 
 .calculadora.dark button.btn-igual {
-    background-color: #223323;
-    color: white;
+    background-color: #e5202b;
+    color: #ffffff;
 }
